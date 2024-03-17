@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+    border: 5px solid orangered;
+  background-image: url(./body.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048);
+  overflow: hidden;
+  width: calc(100vw - 65vw);
+  max-width: 100%;
+  margin: 4rem 0rem;
+
+}
+
+.header {
+  background: linear-gradient(45deg, blue, red, orange, green);
+  padding: 2.5rem;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px transparent;
+}
+
+.form {
+  padding: 40px;
+}
+
+.form-control {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: blue;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px 2px bisque;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3rem;
+  padding: 14px;
+  color: #444;
+}
+
+#email{
+    color: #444;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  position: absolute;
+  right: 12px;
+  top: 43px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-circle-check {
+  color: green;
+  font-size: 1.5rem;
+  visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: red;
+  font-size: 1.5rem;
+  visibility: visible;
+}
+
+.form-control small {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: red;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  text-shadow: 2px 2px 2px 2px bisque;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form .btn {
+  background: linear-gradient(45deg, blue, red, orange, green);
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  display: block;
+  font-size: 1.2rem;
+  width: 100%;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  padding: 1rem;
+  text-shadow: 1px 1px 1px transparent;
+}
+
+.form .btn:hover {
+  background: linear-gradient(45deg, blue, red, orange, green);
+  color: #fff;
+  transition: all 1s ease-in-out;
+  text-decoration: underline;
+}
+
+@media (max-width: 998px) {
+  body {
+    background-image: url(./body.jpeg);
+    background-size: 130%;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .container {
+    width: calc(100vw - 20vw);
+    width: 90%;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    background: bisque;
+    
+  }
+
+  .form-control label {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .form-control i {
+    position: absolute;
+    right: 12px;
+    top: 45.5px;
+    visibility: hidden;
+  }
+
+  .form-control small {
+   font-weight: 600;
+  }
+
+}
